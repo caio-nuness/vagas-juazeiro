@@ -1,0 +1,75 @@
+/* ========== CSS DO CONTAINER ========== */
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ========== CSS DO HEADER ========== */
+.header {
+  width: 100%;
+  height: 10%;
+  padding: 0rem 2rem 0 2rem;
+  background-color: var(--three-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-logo {
+  color: var(--bg-color);
+}
+
+.navbar {
+  width: 35%;
+  height: 75%;
+}
+
+.navlist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navlink {
+  padding: 0.5rem;
+  width: 6rem;
+  border-radius: 4px;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  color: var(--seven-color);
+}
+
+.navlink:hover {
+  background-color: var(--nav-hover-color);
+}
+
+/* ========== CSS DO MAIN ========== */
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* ========== CSS DO FOOTER ========== */
+.footer {
+  text-align: center;
+  padding: 0 0 0.5rem 0;
+}
+
+.footer p, a {
+  color: var(--white-color);
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+

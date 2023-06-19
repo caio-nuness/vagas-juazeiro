@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Página Inícial :: BusqueJua {% endblock title %}
+
+{% block main %}
+<div class="left">
+  <h1>
+    Entre ou <br>
+    cadastre-se <br> 
+    para conferir <br> 
+    nossas vagas
+  </h1>
+  <a class="link-vagas" href="#">Vagas para Juazeiro-Ba</a>
+</div>
+
+<div class="right">
+  <img class="img-home"  src="{%  static '/img/home/teste.svg' %}" alt="teste">
+</div>
+{% endblock main %}

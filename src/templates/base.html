@@ -1,0 +1,36 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <a class="name-logo" href="#">BUSQUE JUA</a>
+            <ul class="navbar">
+                <li class="navlist">
+                    <a class="navlink" href="1">Inicio</a>
+                    <a class="navlink" href="2">Vagas</a>
+                    <a class="navlink" href="3">Contato</a>
+                    <a class="navlink" href="4">Sobre</a>
+                </li>
+            </ul>
+        </header>
+
+        <main class="main">
+            {% block main %}
+            {% endblock main%}
+        </main>
+
+        <footer class="footer">
+            <p>Desenvolvido com muito amor por <a href="">Caio Nunes</a></p>
+        </footer>
+    </div>
+</body>
+</html>
